@@ -1,5 +1,4 @@
-local M = {}
-
+M = {}
 M.RustDocs = function()
 	local url = "https://doc.rust-lang.org/std/"
 	local os = string.lower(package.config:sub(1, 1)) == "\\" and "windows" or "unix" or "macos"
@@ -13,7 +12,8 @@ M.RustDocs = function()
 		print("unsupported operating system")
 	end
 end
--- M.RustDocs()
+
+vim.api.nvim_create_user_command("RustDocs", M.RustDocs, {})
 
 M.LuaDocs = function()
 	local url = "https://www.lua.org/manual/5.4/"
@@ -29,7 +29,6 @@ M.LuaDocs = function()
 	end
 end
 
-print(M)
--- M.LuaDocs()
+vim.api.nvim_create_user_command("LuaDocs", M.LuaDocs, {})
 
-return M.LuaDocs, M.RustDocs()
+return M.LuaDocs, M.RustDocs
