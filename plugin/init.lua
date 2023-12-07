@@ -1,0 +1,7 @@
+require("devdocs")
+require("luadocs")
+require("nvimdocs")
+require("pydocs")
+require("rsdocs")
+require("tsdocs")
+require("jsdocs")
