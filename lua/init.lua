@@ -12,7 +12,6 @@ M.TypeScriptDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.TypeScriptDocs
 end
 
 vim.api.nvim_create_user_command("TypeScriptDocs", M.TypeScriptDocs, {})
@@ -29,7 +28,6 @@ M.DevDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.DevDocs
 end
 
 vim.api.nvim_create_user_command("DevDocs", M.DevDocs, {})
@@ -46,7 +44,6 @@ M.JavaScriptDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.JavaScriptDocs
 end
 
 vim.api.nvim_create_user_command("JavaScriptDocs", M.JavaScriptDocs, {})
@@ -63,7 +60,6 @@ M.PythonDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.PythonDocs
 end
 
 vim.api.nvim_create_user_command("PythonDocs", M.PythonDocs, {})
@@ -80,7 +76,6 @@ M.GoDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.GoDocs
 end
 
 vim.api.nvim_create_user_command("GoDocs", M.GoDocs, {})
@@ -97,7 +92,6 @@ M.RustDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.RustDocs
 end
 
 vim.api.nvim_create_user_command("RustDocs", M.RustDocs, {})
@@ -114,7 +108,6 @@ M.LuaDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.LuaDocs
 end
 
 vim.api.nvim_create_user_command("LuaDocs", M.LuaDocs, {})
@@ -134,4 +127,4 @@ M.NeovimDocs = function()
 end
 
 vim.api.nvim_create_user_command("NeovimDocs", M.NeovimDocs, {})
-return M, M.NeovimDocs
+return M.DevDocs, M.JavaScriptDocs, M.PythonDocs, M.GoDocs, M.RustDocs, M.LuaDocs, M.NeovimDocs
