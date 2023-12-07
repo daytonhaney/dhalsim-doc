@@ -127,4 +127,5 @@ M.NeovimDocs = function()
 end
 
 vim.api.nvim_create_user_command("NeovimDocs", M.NeovimDocs, {})
-return M.DevDocs, M.JavaScriptDocs, M.PythonDocs, M.GoDocs, M.RustDocs, M.LuaDocs, M.NeovimDocs
+
+return M
