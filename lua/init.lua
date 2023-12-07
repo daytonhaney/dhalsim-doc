@@ -1,21 +1,4 @@
-M = {}
-
-M.DevDocs = function()
-	local url = "https://devdocs.io/"
-	local os = string.lower(package.config:sub(1, 1)) == "\\" and "windows" or "unix" or "macos"
-	if os == "windows" then
-		io.popen("start " .. url)
-	elseif os == "unix" then
-		io.popen("xdg-open " .. url)
-	elseif os == "macos" then
-		io.popen("open " .. url)
-	else
-		print("unsupported operating system")
-	end
-	return M.DevDocs
-end
-
-vim.api.nvim_create_user_command("DevDocs", M.DevDocs, {})
+local M = {}
 
 M.TypeScriptDocs = function()
 	local url = "https://www.typescriptlang.org/docs/"
@@ -33,6 +16,23 @@ M.TypeScriptDocs = function()
 end
 
 vim.api.nvim_create_user_command("TypeScriptDocs", M.TypeScriptDocs, {})
+
+M.DevDocs = function()
+	local url = "https://devdocs.io/"
+	local os = string.lower(package.config:sub(1, 1)) == "\\" and "windows" or "unix" or "macos"
+	if os == "windows" then
+		io.popen("start " .. url)
+	elseif os == "unix" then
+		io.popen("xdg-open " .. url)
+	elseif os == "macos" then
+		io.popen("open " .. url)
+	else
+		print("unsupported operating system")
+	end
+	return M.DevDocs
+end
+
+vim.api.nvim_create_user_command("DevDocs", M.DevDocs, {})
 
 M.JavaScriptDocs = function()
 	local url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
@@ -131,8 +131,7 @@ M.NeovimDocs = function()
 	else
 		print("unsupported operating system")
 	end
-	return M.NeovimDocs
 end
 
 vim.api.nvim_create_user_command("NeovimDocs", M.NeovimDocs, {})
-return M
+return M, M.NeovimDocs

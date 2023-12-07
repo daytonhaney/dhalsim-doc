@@ -3,3 +3,22 @@
 ### save 1000ms by opening documentation from neovim
 
 #### to use:
+
+```lua
+return {
+"daytonhaney/dhalsim.nvim",
+
+    cmd = {
+    	"RustDocs",
+    	"GoDocs",
+    	"DevDocs",
+    	"TypeScriptDocs",
+    	"JavaScriptDocs",
+    	"PythonDocs",
+    	"LuaDocs",
+    	"NeovimDocs",
+
+    }
+
+}
+```
