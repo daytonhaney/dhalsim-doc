@@ -8,17 +8,5 @@
 return {
 "daytonhaney/dhalsim.nvim",
 
-    cmd = {
-    	"RustDocs",
-    	"GoDocs",
-    	"DevDocs",
-    	"TypeScriptDocs",
-    	"JavaScriptDocs",
-    	"PythonDocs",
-    	"LuaDocs",
-    	"NeovimDocs",
-
-    }
-
 }
 ```
