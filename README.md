@@ -6,7 +6,7 @@
 
 ```lua
 return {
-"daytonhaney/dhalsim.nvim",
+"daytonhaney/dhalsim-doc",
 
 }
 ```
