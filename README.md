@@ -3,7 +3,7 @@
 ### save 1000ms by opening documentation from neovim
 
 #### to use:
-
+![dhalsimdoc](https://github.com/daytonhaney/aoc/assets/37848207/362c0cb6-4006-42a9-8d56-f1133aebab10)
 ```lua
 return {
 "daytonhaney/dhalsim-doc",
