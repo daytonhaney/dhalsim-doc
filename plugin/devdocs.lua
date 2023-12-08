@@ -1,6 +1,6 @@
 local M = {}
 
-M.DevDocs = function()
+M.DeveloperDocs_io = function()
 	local url = "https://devdocs.io"
 	local os = string.lower(package.config:sub(1, 1)) == "\\" and "windows" or "unix" or "macos"
 	if os == "windows" then
@@ -14,6 +14,6 @@ M.DevDocs = function()
 	end
 end
 
-vim.api.nvim_create_user_command("DevDocs", M.DevDocs, {})
+vim.api.nvim_create_user_command("DeveloperDocs", M.DeveloperDocs_io, {})
 
 return M

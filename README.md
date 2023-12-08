@@ -10,3 +10,26 @@ return {
 
 }
 ```
+
+- [Go-Documentation](https://pkg.go.dev/std)
+- [HTML-Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript-Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Lua-Documentation](https://www.lua.org/manual/5.4/)
+- [Node-Documentation](https://neovim.io/doc/user/index.html)
+- [Python-Documentation](https://docs.python.org/3/library/index.html)
+- [Rust-Documentation](https://doc.rust-lang.org/std/)
+- [TypeScript-Documentation](https://www.typescriptlang.org/docs/handbook/intro.html)
+
+Adds the following commands to nvim config:
+
+GoDocs
+HTMLDocs
+HTMLStandard
+JavaScriptDocs
+LuaDocs
+NodeDocs
+NPM
+PythonDocs
+RustDocs
+RustCrates
+TypeScriptDocs

@@ -1,7 +1,7 @@
 local M = {}
 
 M.PythonDocs = function()
-	local url = "https://docs.python.org/3/"
+	local url = "https://docs.python.org/3/library/index.html"
 	local os = string.lower(package.config:sub(1, 1)) == "\\" and "windows" or "unix" or "macos"
 	if os == "windows" then
 		io.popen("start " .. url)

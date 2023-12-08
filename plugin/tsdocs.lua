@@ -1,7 +1,7 @@
 local M = {}
 
 M.TypeScriptDocs = function()
-	local url = "https://www.typescriptlang.org/docs/"
+	local url = "https://www.typescriptlang.org/docs/handbook/intro.html"
 	local os = string.lower(package.config:sub(1, 1)) == "\\" and "windows" or "unix" or "macos"
 	if os == "windows" then
 		io.popen("start " .. url)
