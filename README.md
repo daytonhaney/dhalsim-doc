@@ -2,8 +2,10 @@
 
 ### save 1000ms by opening documentation from neovim
 
-#### to use:
 ![dhalsimdoc](https://github.com/daytonhaney/aoc/assets/37848207/362c0cb6-4006-42a9-8d56-f1133aebab10)
+
+#### to use:
+
 ```lua
 return {
 "daytonhaney/dhalsim-doc",
@@ -20,16 +22,20 @@ return {
 - [Rust-Documentation](https://doc.rust-lang.org/std/)
 - [TypeScript-Documentation](https://www.typescriptlang.org/docs/handbook/intro.html)
 
-Adds the following commands to nvim config:
+#### Adds the following commands to nvim config:
 
-GoDocs
-HTMLDocs
-HTMLStandard
-JavaScriptDocs
-LuaDocs
-NodeDocs
-NPM
-PythonDocs
-RustDocs
-RustCrates
-TypeScriptDocs
+    GoDocs
+    HTMLDocs
+    HTMLStandard
+    JavaScriptDocs
+    LuaDocs
+    NodeDocs
+    NPM
+    PythonDocs
+    RustDocs
+    RustCrates
+    TypeScriptDocs
+
+#### Remove commands:
+
+Remove the require with module path and the filetype from /plugin

@@ -14,6 +14,6 @@ M.JavaScriptDocs = function()
 	end
 end
 
-vim.api.nvim_create_user_command("JavaScriptDocumentationn", M.JavaScriptDocs, {})
+vim.api.nvim_create_user_command("JavaScriptDocs", M.JavaScriptDocs, {})
 
 return M

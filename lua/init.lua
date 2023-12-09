@@ -1,0 +1,11 @@
+require("plugin.devdocs")
+require("plugin.godocs")
+require("plugin.htmldocs")
+require("plugin.jsdocs")
+require("plugin.luadocs")
+require("plugin.nodedocs")
+require("plugin.nvimdocs")
+require("plugin.pydocs")
+require("plugin.rsdocs")
+require("plugin.tsdocs")
+
