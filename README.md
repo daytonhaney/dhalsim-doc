@@ -38,4 +38,4 @@ return {
 
 #### Remove commands:
 
-Remove the require with module path and the filetype from /plugin
+    Remove the require with module path and the filetype from /plugin
