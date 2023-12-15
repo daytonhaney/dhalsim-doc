@@ -44,4 +44,4 @@ return {
 
 ### why
 
-    want to learn more about neovim, lua, and plugin develeopment
+    want to learn more about neovim, lua, and plugin development
