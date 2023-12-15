@@ -4,6 +4,8 @@
 
 ![dhalsimdoc](https://github.com/daytonhaney/aoc/assets/37848207/362c0cb6-4006-42a9-8d56-f1133aebab10)
 
+### for now, because of the tiny size of plugin, the plugin and all commands are loaded before the main neovim screen. - no configuration needed.
+
 #### to use:
 
 ```lua
@@ -38,4 +40,8 @@ return {
 
 #### Remove commands:
 
-    Remove the require with module path and the filetype from /plugin
+    remove the filetype from /plugin
+
+### why
+
+    want to learn more about neovim, lua, and plugin develeopment
